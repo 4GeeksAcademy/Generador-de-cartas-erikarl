@@ -1,5 +1,50 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
-
-body{
-    background: white;
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+    margin-top: 20px;
 }
+
+.card {
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card-value {
+    font-size: 7rem;
+    font-weight: bold;
+    margin: auto;
+}
+
+.suit {
+    font-size: 5rem;
+}
+
+.suit-top {
+    align-self: flex-start;
+}
+
+.suit-bottom {
+    align-self: flex-end;
+    transform: rotate(180deg);
+}
+
+.hearts, .diamonds {
+    color: red;
+}
+
+.spades, .clubs {
+    color: black;
+}
+
